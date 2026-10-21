@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal de orientación ciudadana para conocer trámites y servicios digitales oficiales.">
+  <title>Llave Digital Ciudadana 2030 | Orientación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Llave Digital Ciudadana 2030, inicio">
+        <span class="brand-mark" aria-hidden="true">Ll</span>
+        <span><strong>Llave Digital Ciudadana</strong><small>Orientación para trámites y servicios</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menú ☰</button>
+      <nav id="mainNav" aria-label="Navegación principal">
+        <a href="#tramites">Trámites</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a href="#seguridad">Seguridad digital</a>
+        <a href="#acerca">Acerca del portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">INFORMACIÓN CLARA · FUENTES OFICIALES</p>
+          <h1>Haz tus trámites digitales con más confianza.</h1>
+          <p class="hero-copy">Encuentra orientación sencilla sobre trámites públicos, revisa los requisitos básicos y accede al sitio oficial que los realiza.</p>
+          <a class="button button-light" href="#tramites">Explorar trámites <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-card" aria-label="Pasos para orientarse">
+          <div class="hero-icon" aria-hidden="true">✓</div>
+          <h2>Empieza por aquí</h2>
+          <ol>
+            <li>Busca el trámite que necesitas.</li>
+            <li>Revisa los requisitos y la modalidad.</li>
+            <li>Continúa en el portal oficial.</li>
+          </ol>
+          <p class="small-note">Este sitio orienta; no realiza trámites ni guarda datos personales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tramites">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">DIRECTORIO DE ORIENTACIÓN</p><h2>Trámites y servicios</h2></div>
+          <p>Usa el buscador para encontrar información. Verifica los requisitos actualizados en la fuente oficial.</p>
+        </div>
+        <div class="search-panel">
+          <label for="searchInput">Buscar por trámite o palabra clave</label>
+          <div class="search-row">
+            <input type="search" id="searchInput" placeholder="Ej. acta, fiscal, Llave CDMX" autocomplete="off">
+            <button id="clearSearch" class="button button-outline" type="button">Limpiar</button>
+          </div>
+          <p id="resultCount" class="result-count" aria-live="polite">Se muestran 3 trámites.</p>
+        </div>
+        <div class="cards" id="tramiteCards">
+          <article class="tramite-card" data-search="acta nacimiento copia certificada renapo registro civil identidad">
+            <div class="card-top"><span class="tag">Identidad</span><span class="card-number">01</span></div>
+            <h3>Copia certificada del acta de nacimiento</h3>
+            <p>Permite consultar y obtener una copia certificada del acta de nacimiento por internet.</p>
+            <h4>Requisitos básicos</h4>
+            <ul><li>CURP o datos registrales.</li><li>Datos de filiación para localizar el registro.</li><li>Medio de pago, si corresponde.</li></ul>
+            <p><strong>Modalidad:</strong> En línea. El costo depende de la entidad federativa de registro.</p>
+            <a class="button button-primary" href="https://www.gob.mx/ActaNacimiento/" target="_blank" rel="noopener noreferrer">Ir al sitio oficial <span aria-hidden="true">↗</span></a>
+            <p class="source-note">Fuente: Gobierno de México / RENAPO.</p>
+          </article>
+          <article class="tramite-card" data-search="constancia situación fiscal sat rfc cif contribuyente impuestos">
+            <div class="card-top"><span class="tag">Fiscal</span><span class="card-number">02</span></div>
+            <h3>Constancia de Situación Fiscal</h3>
+            <p>Documento que contiene información del RFC y datos fiscales de la persona contribuyente.</p>
+            <h4>Requisitos básicos</h4>
+            <ul><li>Estar inscrito en el RFC.</li><li>Para el portal SAT: Contraseña o e.firma vigente.</li><li>Existen modalidades adicionales, como SAT ID, sujetas a requisitos específicos.</li></ul>
+            <p><strong>Modalidad:</strong> En línea y otras modalidades indicadas por el SAT. Trámite gratuito.</p>
+            <a class="button button-primary" href="https://www.sat.gob.mx/portal/public/tramites/constancia-de-situacion-fiscal" target="_blank" rel="noopener noreferrer">Ir al sitio oficial <span aria-hidden="true">↗</span></a>
+            <p class="source-note">Fuente: Servicio de Administración Tributaria.</p>
+          </article>
+          <article class="tramite-card" data-search="Llave CDMX cuenta registro acceso servicios digitales expediente">
+            <div class="card-top"><span class="tag">Acceso digital</span><span class="card-number">03</span></div>
+            <h3>Registro y acceso a Llave CDMX</h3>
+            <p>Cuenta de acceso para interactuar con servicios y trámites digitales de la Ciudad de México.</p>
+            <h4>Requisitos básicos</h4>
+            <ul><li>Consultar las condiciones vigentes en el portal oficial.</li><li>El registro puede solicitar datos de identificación, como CURP.</li><li>Usar un correo o teléfono al que se tenga acceso, cuando lo solicite el sistema.</li></ul>
+            <p><strong>Modalidad:</strong> En línea. Algunos servicios pueden tener requisitos adicionales.</p>
+            <a class="button button-primary" href="https://llave.cdmx.gob.mx/" target="_blank" rel="noopener noreferrer">Ir al sitio oficial <span aria-hidden="true">↗</span></a>
+            <p class="source-note">Fuente: Gobierno de la Ciudad de México.</p>
+          </article>
+        </div>
+        <div id="noResults" class="no-results" hidden><h3>No encontramos coincidencias</h3><p>Prueba con otra palabra, por ejemplo: acta, fiscal o cuenta.</p></div>
+        <p class="disclaimer"><strong>Importante:</strong> los requisitos pueden cambiar. Antes de iniciar, revisa la información vigente en el sitio oficial. Este prototipo no está conectado a sistemas gubernamentales.</p>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="preguntas">
+      <div class="container narrow">
+        <p class="eyebrow">RESOLVEMOS DUDAS COMUNES</p>
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <details><summary>1. ¿Este portal realiza los trámites por mí?</summary><p>No. Es un prototipo informativo. Explica los pasos generales y enlaza a los portales oficiales donde puedes iniciar el trámite.</p></details>
+          <details><summary>2. ¿Tengo que pagar para usar este portal?</summary><p>No. El portal de orientación es una propuesta académica. El costo de cada trámite depende de la autoridad responsable; por ejemplo, la Constancia de Situación Fiscal es gratuita y el acta puede tener un costo según la entidad.</p></details>
+          <details><summary>3. ¿Por qué debo revisar los requisitos en la página oficial?</summary><p>Las autoridades pueden actualizar los requisitos, costos y procedimientos. La fuente oficial es la referencia para confirmar la información vigente.</p></details>
+          <details><summary>4. ¿Qué hago si no puedo completar un trámite en línea?</summary><p>Consulta la sección de ayuda o contacto del organismo responsable y verifica si existe atención presencial, telefónica o una modalidad alternativa.</p></details>
+          <details><summary>5. ¿Debo escribir aquí mi CURP, contraseña o documentos?</summary><p>No. Nunca introduzcas datos personales en este prototipo. Abre el sitio oficial y confirma que la dirección sea legítima antes de compartir información.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="seguridad">
+      <div class="container">
+        <p class="eyebrow">CUIDA TU INFORMACIÓN</p>
+        <h2>Recomendaciones de seguridad digital</h2>
+        <div class="security-grid">
+          <article class="security-card"><span class="security-icon" aria-hidden="true">01</span><h3>Verifica la dirección web</h3><p>Entra desde los enlaces oficiales y revisa cuidadosamente el dominio. Desconfía de mensajes que presionen para compartir contraseñas o realizar pagos urgentes.</p></article>
+          <article class="security-card"><span class="security-icon" aria-hidden="true">02</span><h3>Protege tus datos y accesos</h3><p>No compartas contraseñas, códigos de verificación ni documentos por mensajes no solicitados. Cierra sesión si usas un equipo compartido.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="acerca">
+      <div class="container about-grid">
+        <div><p class="eyebrow">ACERCA DEL PROYECTO</p><h2>Orientación para reducir barreras digitales</h2></div>
+        <div><p>Llave Digital Ciudadana 2030 busca hacer más comprensible el acceso a trámites públicos mediante información organizada, lenguaje claro y enlaces a fuentes oficiales. Está pensado como apoyo para personas que necesitan orientación al usar servicios digitales.</p><p><strong>Alcance del prototipo:</strong> muestra información estática, permite filtrar los trámites en el navegador y presenta un archivo XML de ejemplo. No tiene base de datos, inicio de sesión, conexión con dependencias ni envío de formularios.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><div><strong>Llave Digital Ciudadana 2030</strong><p>Prototipo académico de orientación ciudadana.</p></div><p>La información se debe verificar en los portales oficiales.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

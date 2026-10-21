@@ -1,0 +1,37 @@
+/* Hoja de estilo asociada a tramites.xml.
+   El navegador puede aplicar estilos XML en una vista directa; la visualización
+   depende del navegador. La versión HTML del prototipo presenta los mismos datos. */
+tramites {
+  display: block;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 24px;
+  color: #4D1D2D;
+  background: #f3f7fa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+tramites::before {
+  content: "Llave Digital Ciudadana 2030 | Catálogo XML de trámites";
+  display: block;
+  padding: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: #4D1D2D;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+tramite {
+  display: block;
+  margin: 16px 0;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d8e1e8;
+  border-left: 5px solid #236B4E;
+  border-radius: 10px;
+}
+nombre { display: block; color: #4D1D2D; font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+descripcion, requisitos, requisito, modalidad, costo, institucion, url { display: block; margin: 7px 0; line-height: 1.5; }
+requisitos { padding-left: 18px; }
+requisito { display: list-item; list-style: disc; }
+url { color: #722F45; text-decoration: underline; overflow-wrap: anywhere; }

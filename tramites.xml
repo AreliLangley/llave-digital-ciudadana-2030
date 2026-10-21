@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="tramites.css"?>
+<tramites>
+  <tramite id="1">
+    <nombre>Copia certificada del acta de nacimiento</nombre>
+    <descripcion>Permite consultar y obtener en línea una copia certificada del acta de nacimiento.</descripcion>
+    <requisitos>
+      <requisito>CURP o datos registrales.</requisito>
+      <requisito>Datos de filiación para localizar el registro.</requisito>
+      <requisito>Medio de pago si corresponde.</requisito>
+    </requisitos>
+    <modalidad>En línea</modalidad>
+    <costo>Depende de la entidad federativa de registro.</costo>
+    <institucion>Gobierno de México / RENAPO</institucion>
+    <url>https://www.gob.mx/ActaNacimiento/</url>
+  </tramite>
+  <tramite id="2">
+    <nombre>Constancia de Situación Fiscal</nombre>
+    <descripcion>Documento que contiene información del RFC y datos fiscales de la persona contribuyente.</descripcion>
+    <requisitos>
+      <requisito>Estar inscrito en el RFC.</requisito>
+      <requisito>Para el portal SAT, Contraseña o e.firma vigente.</requisito>
+      <requisito>Las modalidades alternativas tienen requisitos específicos.</requisito>
+    </requisitos>
+    <modalidad>En línea y otras modalidades indicadas por el SAT</modalidad>
+    <costo>Gratuito</costo>
+    <institucion>Servicio de Administración Tributaria</institucion>
+    <url>https://www.sat.gob.mx/portal/public/tramites/constancia-de-situacion-fiscal</url>
+  </tramite>
+  <tramite id="3">
+    <nombre>Registro y acceso a Llave CDMX</nombre>
+    <descripcion>Cuenta de acceso para interactuar con trámites y servicios digitales de la Ciudad de México.</descripcion>
+    <requisitos>
+      <requisito>Consultar condiciones vigentes en el portal oficial.</requisito>
+      <requisito>El registro puede solicitar datos de identificación, como CURP.</requisito>
+      <requisito>Contar con correo o teléfono accesible cuando el sistema lo solicite.</requisito>
+    </requisitos>
+    <modalidad>En línea</modalidad>
+    <costo>Consultar condiciones del servicio oficial</costo>
+    <institucion>Gobierno de la Ciudad de México</institucion>
+    <url>https://llave.cdmx.gob.mx/</url>
+  </tramite>
+</tramites>
